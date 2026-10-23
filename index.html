@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Moved</title>
+<script>
+  // Old repo names -> new ones. Keeps links from before a rename working.
+  var moved = { "PokeRogue-Guide-Aesthetic": "PokeRogue-Classic-Guide" };
+  var parts = location.pathname.split("/");
+  if (moved[parts[1]]) {
+    parts[1] = moved[parts[1]];
+    location.replace(parts.join("/") + location.search + location.hash);
+  } else {
+    location.replace("https://github.com/zi-cong-tan");
+  }
+</script>
+</head>
+<body>
+<p>This page moved. <a href="https://zi-cong-tan.github.io/PokeRogue-Classic-Guide/">PokeRogue Classic Guide</a> · <a href="https://zi-cong-tan.github.io/PokeRogue-Endless-Guide/">PokeRogue Endless Guide</a></p>
+</body>
+</html>
